@@ -11,53 +11,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projectv2"
         tools:targetApi="31">
-
         <activity
             android:name=".ConnexionActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".CreationActivity"
             android:exported="false"
             android:parentActivityName=".ConnexionActivity" />
-
         <activity
             android:name=".aide"
-            android:exported="true"
+            android:exported="false"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".maintenance"
-            android:exported="true"
+            android:exported="false"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".anomalies"
-            android:exported="true"
+            android:exported="false"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".bilancarbone"
-            android:exported="true"
+            android:exported="false"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".maconso"
-            android:exported="true"
-            android:parentActivityName=".MainActivity" />
-
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:parentActivityName=".ConnexionActivity" />
-
-
     </application>
 
 </manifest>
