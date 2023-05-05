@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
+
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.row.view.*
+import java.util.logging.Logger.global
 
 
 class MyAdapter (val arrayList: ArrayList<Model>, val context: Context) :
@@ -38,7 +40,11 @@ class MyAdapter (val arrayList: ArrayList<Model>, val context: Context) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bindItems(arrayList[position])
+        //avoir position de l'item selectionné
+        val model = arrayList.get(position)
 
+        //avoir le titre de l'item selectionné
+        var gTitle : String = model.title
         holder.itemView.setOnClickListener {
 
             if (position == 0) {
@@ -47,6 +53,9 @@ class MyAdapter (val arrayList: ArrayList<Model>, val context: Context) :
                     "Click sur Ma consommation",
                     Toast.LENGTH_LONG
                 ).show()
+                val intentStat = Intent(context, maconso::class.java)
+                context.startActivity(intentStat)
+                intentStat.putExtra("iTitle" , gTitle)
             }
 
             if (position == 1) {
@@ -55,6 +64,8 @@ class MyAdapter (val arrayList: ArrayList<Model>, val context: Context) :
                     "Click sur Bilan carbone",
                     Toast.LENGTH_LONG
                 ).show()
+                val intentBilanCarbonne = Intent(context, bilancarbone::class.java)
+                context.startActivity(intentBilanCarbonne)
             }
 
             if (position == 2) {
@@ -63,6 +74,8 @@ class MyAdapter (val arrayList: ArrayList<Model>, val context: Context) :
                     "Click sur Détection d'anomalies",
                     Toast.LENGTH_LONG
                 ).show()
+                val intentAnomalies = Intent(context, anomalies::class.java)
+                context.startActivity(intentAnomalies)
             }
 
             if (position == 3) {
@@ -71,6 +84,8 @@ class MyAdapter (val arrayList: ArrayList<Model>, val context: Context) :
                     "Click sur Maintenance prédictive",
                     Toast.LENGTH_LONG
                 ).show()
+                val intentMaintenance = Intent(context, maintenance::class.java)
+                context.startActivity(intentMaintenance)
             }
 
             if (position == 4) {
@@ -79,35 +94,23 @@ class MyAdapter (val arrayList: ArrayList<Model>, val context: Context) :
                     "Click sur Aide",
                     Toast.LENGTH_LONG
                 ).show()
+                val intentAide = Intent(context, aide::class.java)
+                context.startActivity(intentAide)
             }
 
 
             //avoir position de l'item selectionné
-            val model = arrayList.get(position)
+            //val model = arrayList.get(position)
 
             //avoir le titre de l'item selectionné
-            var gTitle : String = model.title
-
-            //creation de l'intent
-            val intent1 = Intent(context, maconso::class.java)
-            val intent2 = Intent(context, bilancarbone::class.java)
-            val intent3 = Intent(context, anomalies::class.java)
-            val intent4 = Intent(context, maintenance::class.java)
-            val intent5 = Intent(context, aide::class.java)
+            //var gTitle : String = model.title
 
             //prendre tous ces élements avec putExtra intent
-            intent1.putExtra("iTitle" , gTitle)
-            intent2.putExtra("iTitle" , gTitle)
-            intent3.putExtra("iTitle" , gTitle)
-            intent4.putExtra("iTitle" , gTitle)
-            intent5.putExtra("iTitle" , gTitle)
-
-            //start les activités
-            context.startActivity(intent1)
-            context.startActivity(intent2)
-            context.startActivity(intent3)
-            context.startActivity(intent4)
-            context.startActivity(intent5)
+            //intentStat.putExtra("iTitle" , gTitle)
+            //intent2.putExtra("iTitle" , gTitle)
+            //intent3.putExtra("iTitle" , gTitle)
+            //intent4.putExtra("iTitle" , gTitle)
+            //intent5.putExtra("iTitle" , gTitle)
 
         }
     }
