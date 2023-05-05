@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         arrayList.add(Model("Détection d'anomalies", "Afficher vos anomalies de consommation d'eau", R.drawable.warning))
         arrayList.add(Model("Maintenance prédictive", "Afficher les améliorations possibles", R.drawable.maintenance))
         arrayList.add(Model("Aide", "Un problème ? Contactez nous", R.drawable.aide))
+        arrayList.add(Model("BLE", "Connexion BLE", R.drawable.bluetooth))
 
         val myAdapter = MyAdapter(arrayList, this)
 

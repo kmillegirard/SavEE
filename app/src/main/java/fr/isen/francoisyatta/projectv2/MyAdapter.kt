@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 
 import androidx.recyclerview.widget.RecyclerView
+import fr.isen.francoisyatta.projectv2.ble.BleActivity
 import kotlinx.android.synthetic.main.row.view.*
 import java.util.logging.Logger.global
 
@@ -96,6 +97,16 @@ class MyAdapter (val arrayList: ArrayList<Model>, val context: Context) :
                 ).show()
                 val intentAide = Intent(context, aide::class.java)
                 context.startActivity(intentAide)
+            }
+
+            if (position == 5) {
+                Toast.makeText(
+                    context,
+                    "Click sur BLE",
+                    Toast.LENGTH_LONG
+                ).show()
+                val intentBle = Intent(context, BleActivity::class.java)
+                context.startActivity(intentBle)
             }
 
 
