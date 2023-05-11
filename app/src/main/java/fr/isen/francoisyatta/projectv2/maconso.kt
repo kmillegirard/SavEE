@@ -3,6 +3,7 @@ package fr.isen.francoisyatta.projectv2
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
+import androidx.viewpager.widget.ViewPager
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.components.XAxis
@@ -10,6 +11,8 @@ import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
+import com.google.android.material.tabs.TabLayout
+import fr.isen.francoisyatta.projectv2.Adapter.adapter
 import fr.isen.francoisyatta.projectv2.databinding.ActivityMaconsoBinding
 
 class maconso : AppCompatActivity() {
@@ -19,6 +22,7 @@ class maconso : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_maconso)
+
 
         binding = ActivityMaconsoBinding.inflate(layoutInflater)
         setContentView(binding.root)

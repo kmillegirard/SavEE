@@ -8,6 +8,7 @@ enum class BLEUUIDAttributes(val uuid: String, val title: String) {
     APPEARANCE("00002a01-0000-1000-8000-00805f9b34fb", "Apparance"),
     CUSTOM_CHARACTERISTIC("466c5678-f593-11e8-8eb2-f2801f1b9fd1", "Caracteristique spécifique"),
     CUSTOM_CHARACTERISTIC_2("466c9abc-f593-11e8-8eb2-f2801f1b9fd1", "Caracteristique spécifique"),
+
     UNKNOWN_SERVICE("", "Inconnu");
 
     companion object {

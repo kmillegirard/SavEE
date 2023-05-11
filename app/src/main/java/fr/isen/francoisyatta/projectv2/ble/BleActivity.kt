@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import fr.isen.francoisyatta.projectv2.R
 
 
+
 class BleActivity : AppCompatActivity() {
 
     lateinit var boutonGoBlePage : Button
@@ -21,4 +22,5 @@ class BleActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 }
