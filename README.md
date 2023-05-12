@@ -69,21 +69,21 @@ En clickant sur celui-ci, l'application nous requiert d'activer le bluetooth de 
 Un boutton "PLAY" apparait alors et en appuyant sur celui-ci, l'appareil scan les périphériques bluetooth se trouvant à proximité. Sur l'écran est alors affiché le nom des appareils se trouvant dans les alentours et leurs adresses correspondantes.
 Pour notre projet, on se connecte alors à la carte STM32 avec le BLE du nom SAVEE
 Ensuite on accède à plusieurs informations à savoir : 
-    *l'accès générique
+    - l'accès générique
 
-    *l'attribut générique
+   - l'attribut générique
 
-    *le service spécifique
+   - le service spécifique
 
-    *le nom du périphérique
+   - le nom du périphérique
 
-    *l'apparance
+   - l'apparance
 
-     *les custom characteristic 1, 2, 3, 4 qui est ce qui nous interesse ici 
+   - les custom characteristic 1, 2, 3, 4 qui est ce qui nous interesse ici 
 
 Ici, on va pouvoir: 
-1. écrire en mode "write" dans la 1ère caractéristique
+1.  écrire en mode "write" dans la 1ère caractéristique
 
-2. ensuite lire en mode "read" la valeur précedemment écrite dans la 2e caractéristique 
+2.  ensuite lire en mode "read" la valeur précedemment écrite dans la 2e caractéristique 
 
-3. Puis le "notify" qui va demarrer un timer dans la 3e caractéristique
+3.  Puis le "notify" qui va demarrer un timer dans la 3e caractéristique
