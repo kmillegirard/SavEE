@@ -38,9 +38,9 @@ Présentation de l'application mobile et ses différentes parties :
 - Page de connexion 
 identifiant existant pour se connecter : 
 
-    Identifiant :smartenergy@isen.fr
+    Identifiant : smartenergy@isen.fr
     
-    Mot de passe :12345678
+    Mot de passe : 12345678
 
 - Page de création de compte 
 Ici on crée son compte en mettant ses informations (mail, numero de compte elec, et mot de passe)
