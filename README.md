@@ -18,10 +18,11 @@ L'objectif de cette partie est de détécter une anomalie de fonctionement d'app
 Nos cas d'usage sont une machine à laver ainsi qu'un tuyau.
  
 Pour le tuyau on pourra détecter si il fonctione normalement ou non, c'est à dire qu'on sera capable de détecter une fuite sur le tuyau. L'objectif est de réduire les pertes d'eau.
-![tuyau](Images/Tuyau.png)
+![tuyau_machine](Images/prototype_tuyau.png)
 
 Pour la machine, on pourra détecter un dysfonctionnement grâce aux 2 accelerometres qui y seront placés: un sur la machine et un sur le tuyau d'arrivée d'eau de la machine (voir photo). L'objectif est de réduire les pertes d'eau et les consomations d'électricité.
-![tuyau_machine](Images/prototype_tuyau.png)
+![tuyau](Images/Tuyau.png)
+
 
 Pour permettre ceci nous avons collectés des datas de nos 2 cas d'usage: la machine et de son tuyau ainsi que de notre prototype de tuyau avec une fuite. Nous avons utilisé une nucleoL152RE ainsi que le logiciel unicleo-GUI pour collecter ces datas(vibrations sur 3 dimensions). Nous avons collectés plusieurs classes de datas: lors de fonctionement normal ansi que lors de fonctionement avec anomalie.
 
