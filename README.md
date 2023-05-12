@@ -77,6 +77,7 @@ En entrant dans la page BLE , on a un boutton "Se connecter au bluetooth" . En c
 Un boutton "PLAY" apparait alors et en appuyant sur celui -ci , l'appareil scan les périphériques bluetooth se trouvant à proximité . Sur l'écran est alors affiché le nom des appareils se trouvant dans les alentours et leurs adresses correspondantes.
 Pour notre projet , on se connecte alors à la carte STM32 avec le BLE du nom SAVEE
 Ensuite on accède à plusieurs informations à savoir : 
+
 l'accès générique
 
 l'attribut générique
@@ -88,6 +89,7 @@ le nom du périphérique
 l'apparance
 
 les custom characteristic 1, 2, 3, 4 qui est ce qui nous interesse ici 
+
 Ici , on va pouvoir: 
 
 écrire en mode "write" dans la 1ère caractéristique
