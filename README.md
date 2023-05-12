@@ -13,7 +13,7 @@ Ces données seront récupérées en décimale pour être traités par Nanoedge 
 
 # Détection d'anomalies
 L'objectif de cette partie est de détécter une anomalie de fonctionement d'appareils grâce à ses vibrations qu'on analysera avec un accelerometre (nucleo-WB55 et un iks01A3)
-![WB2](Images/Shield.jpg)
+
 
 Nos cas d'usage sont une machine à laver ainsi qu'un tuyau.
  
