@@ -28,6 +28,7 @@ Ces datas ont ensuite été traitées par une IA: nanoedgeAI qui nous a donné d
 
 
 # TIC made in SavEE
+Afin d'exploiter les données du Linky selon notre volonté il est nécessaire d'accéder aux données brutes. Pour atteindre cet objectif, nous utilisons un schéma éléctronique simple nécessitant un optocoupleur et deux résistances. Nous récupérons ainsi les données clients. Ensuite, tout est traité en UART via un microcontroleur. Notre code traite aussi les données afin de garder seulement ce qui est utile à nos yeux (date + heure + consommation totale). Les données utiles sont stockées dans une carte SD puis le mobile peut y accéder lorsqu'il se connecte via BLE.
 
 # Connectivité
 https://www.canva.com/design/DAFhGJYLjHA/FmaJW0r7sD-M4_MSMO0pXw/view?utm_content=DAFhGJYLjHA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink   
