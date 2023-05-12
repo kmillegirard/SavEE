@@ -18,7 +18,6 @@ L'objectif de cette partie est de détécter une anomalie de fonctionement d'app
 Nos cas d'usage sont une machine à laver ainsi qu'un tuyau.
  
 Pour le tuyau on pourra détecter si il fonctione normalement ou non, c'est à dire qu'on sera capable de détecter une fuite sur le tuyau. L'objectif est de réduire les pertes d'eau.
-![tuyau](Images/Tuyau.png)
 
 Pour la machine, on pourra détecter un dysfonctionnement grâce aux 2 accelerometres qui y seront placés: un sur la machine et un sur le tuyau d'arrivée d'eau de la machine (voir photo). L'objectif est de réduire les pertes d'eau et les consomations d'électricité.
 
