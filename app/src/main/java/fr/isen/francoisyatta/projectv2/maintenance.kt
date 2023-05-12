@@ -7,18 +7,18 @@ import androidx.appcompat.app.ActionBar
 class maintenance : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_maintenance)
+        setContentView(R.layout.activity_maintenance)  //liaison du code .kotlin à l'affichage layout .xml
 
-        val actionBar : ActionBar? = supportActionBar
-        actionBar!!.setDisplayHomeAsUpEnabled(true)
-        actionBar!!.setDisplayShowHomeEnabled(true)
+        //val actionBar : ActionBar? = supportActionBar
+        //actionBar!!.setDisplayHomeAsUpEnabled(true)
+        //actionBar!!.setDisplayShowHomeEnabled(true)
 
-        // get data from putExtra intent
-        var intent = intent
-        val aTitle = intent.getStringExtra("iTitle")
+        // prend les données depuis putExtra intent
+        //var intent = intent
+        //val aTitle = intent.getStringExtra("iTitle")
 
-        //set title in another activity
-        actionBar.setTitle(aTitle)
+        //définit le titre dans une autre activité
+        //actionBar.setTitle(aTitle)
         //a_title.text = aTitle
     }
 }
