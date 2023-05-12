@@ -78,12 +78,20 @@ Un boutton "PLAY" apparait alors et en appuyant sur celui -ci , l'appareil scan 
 Pour notre projet , on se connecte alors à la carte STM32 avec le BLE du nom SAVEE
 Ensuite on accède à plusieurs informations à savoir : 
 l'accès générique
+
 l'attribut générique
+
 le service spécifique
+
 le nom du périphérique
+
 l'apparance
+
 les custom characteristic 1, 2, 3, 4 qui est ce qui nous interesse ici 
 Ici , on va pouvoir: 
+
 écrire en mode "write" dans la 1ère caractéristique
+
 ensuite lire en mode "read" la valeur précedemment écrite dans la 2e caractéristique 
+
 Puis le "notify" qui va demarrer un timer dans la 3e caractéristique
