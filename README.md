@@ -11,6 +11,8 @@ Le but de cette partie est de pouvoir reconnaître la signature électrique de d
 
 Ces données seront récupérées en décimale pour être traités par Nanoedge Studio AI en amont (le fonctionnement de chaque équipement pour en aval reconnaître les équipements qui fonctionnent). Et pour aller plus loin, on fera de l'anomalie détection pour reconnaître aussi les anomalies liées à l'usage de chaque équipement pour une maintenance prédictive. 
 
+# Application mobile
+
 # Détection d'anomalies
 
 # TIC made in SavEE
