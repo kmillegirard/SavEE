@@ -14,6 +14,14 @@ Ces données seront récupérées en décimale pour être traités par Nanoedge 
 # Application mobile
 
 # Détection d'anomalies
+L'objectif de cette partie est de détécter une anomalie de fonctionement d'appareils grâce à ses vibrations qu'on analysera avec un accelerometre (nucleo-WB55). Nos cas d'usage sont une machine à laver ainsi qu'un tuyau .
+
+Pour le tuyau on pourra détecte si il fonctione normalement ou non, c'est à dire qu'on sera capable de détecter une fuite sur le tuyau. L'objectif est de réduire les pertes d'eau.
+
+Pour la machine, on pourra détecter un dysfonctionnement grâce aux 2 accelerometres qui y seront placés: un sur la machine et un sur le tuyau d'arrivée d'eau de la machine (voir photo). L'objectif est de réduire les pertes d'eau et les consomations d'électricité.
+
+Pour permettre ceci nous avons collectés des datas de nos 2 cas d'usage: la machine et de son tuyau ainsi que de notre prototype de tuyau avec une fuite. Nous avons utilisé une nucleoL152RE ainsi que le logiciel unicleo-GUI pour collecter ces datas(vibrations sur 3 dimensions). Nous avons collectés plusieurs classes de datas: lors de fonctionement normal ansi que lors de fonctionement avec anomalie.
+Ces datas ont ensuite été traitées par une IA: nanoedgeAI qui nous a donné des librairies associés.
 
 # TIC made in SavEE
 
