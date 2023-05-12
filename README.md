@@ -36,7 +36,7 @@ Présentation de l'application mobile et ses différentes parties
 
 => Page de connexion 
 identifiant existant pour se connecter : 
--smartenergy@isen.fr
+-Identifiant :smartenergy@isen.fr
 -Mot de passe :12345678
 
 => Page de création de compte 
@@ -44,21 +44,27 @@ Ici on crée son compte en mettant ses informations (mail, numero de compte elec
 NB : il faut un mot de passe de 8 caractères minimum 
 
 => Menu principal
+
 Arrivé sur le menu , on accède à toute les fonctionnalités de notre app 
 
-=> Page "Ma consommation : 
+=> Page "Ma consommation 
+
 On accède à un graphe de la consommation électrique de l'utilisateu
 
-=> Page "Bilan Carbone": 
+=> Page "Bilan Carbone"
+
 Ici on accède au taux d'emission de CO2 des machines que l'utilisateur possède dans son domicile 
 
-=>Page "Détection d'anomalies": 
+=>Page "Détection d'anomalies"
+
 Sur cette page nous avons un boutton "détection" qui recherche une anomalie et qui envoie une notification d'alerte à l'utilisateur en cas de possible problème 
 
 =>Page "Maintenance predictive" 
+
 Sur cette page , nous avons un boutton switch qui est soit en position "ok" ou "ko" et qui renvoit l'état de la machine 
 
 =>Page "Aide" 
+
 Sur la page aide ,vous avez accès à nos adresses mails pour nous contacter possiblement 
 
 =>Page "BLE" 
