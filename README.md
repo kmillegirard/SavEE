@@ -12,6 +12,18 @@ Le but de cette partie est de pouvoir reconnaître la signature électrique de d
 Ces données seront récupérées en décimale pour être traités par Nanoedge Studio AI en amont (le fonctionnement de chaque équipement pour en aval reconnaître les équipements qui fonctionnent). Et pour aller plus loin, on fera de l'anomalie détection pour reconnaître aussi les anomalies liées à l'usage de chaque équipement pour une maintenance prédictive. 
 
 # Détection d'anomalies
+![WB](https://stm32python.gitlab.io/fr/docs/Micropython/IKS01A3/images/WB55_IKS01.jpg)
+L'objectif de cette partie est de détécter une anomalie de fonctionement d'appareils grâce à ses vibrations qu'on analysera avec un accelerometre (nucleo-WB55)
+. Nos cas d'usage sont une machine à laver ainsi qu'un tuyau.
+
+Pour le tuyau on pourra détecter si il fonctione normalement ou non, c'est à dire qu'on sera capable de détecter une fuite sur le tuyau. L'objectif est de réduire les pertes d'eau.
+
+Pour la machine, on pourra détecter un dysfonctionnement grâce aux 2 accelerometres qui y seront placés: un sur la machine et un sur le tuyau d'arrivée d'eau de la machine (voir photo). L'objectif est de réduire les pertes d'eau et les consomations d'électricité.
+
+Pour permettre ceci nous avons collectés des datas de nos 2 cas d'usage: la machine et de son tuyau ainsi que de notre prototype de tuyau avec une fuite. Nous avons utilisé une nucleoL152RE ainsi que le logiciel unicleo-GUI pour collecter ces datas(vibrations sur 3 dimensions). Nous avons collectés plusieurs classes de datas: lors de fonctionement normal ansi que lors de fonctionement avec anomalie.
+
+Ces datas ont ensuite été traitées par une IA: nanoedgeAI qui nous a donné des librairies associés. Ces librairies sont ensuite utilisées avec un code et une nucleo-WB55 afin de pouvoir détecter ces anomalies.
+
 
 # TIC made in SavEE
 
