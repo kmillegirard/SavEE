@@ -34,12 +34,14 @@ https://www.canva.com/design/DAFhGJYLjHA/FmaJW0r7sD-M4_MSMO0pXw/view?utm_content
 # Application mobile
 Présentation de l'application mobile et ses différentes parties 
 
-=> Page de connexion 
+=> Page de connexion *
+
 identifiant existant pour se connecter : 
 -Identifiant :smartenergy@isen.fr
 -Mot de passe :12345678
 
 => Page de création de compte 
+
 Ici on crée son compte en mettant ses informations (mail, numero de compte elec, et mot de passe)
 NB : il faut un mot de passe de 8 caractères minimum 
 
@@ -47,7 +49,7 @@ NB : il faut un mot de passe de 8 caractères minimum
 
 Arrivé sur le menu , on accède à toute les fonctionnalités de notre app 
 
-=> Page "Ma consommation 
+=> Page "Ma consommation" 
 
 On accède à un graphe de la consommation électrique de l'utilisateu
 
@@ -68,6 +70,7 @@ Sur cette page , nous avons un boutton switch qui est soit en position "ok" ou "
 Sur la page aide ,vous avez accès à nos adresses mails pour nous contacter possiblement 
 
 =>Page "BLE" 
+
 En entrant dans la page BLE , on a un boutton "Se connecter au bluetooth" . En clickant sur celui-ci , l'application nous requiert d'activer le bluetooth de l'appareil et de valider les permissions qui vont avec . En faisant cela , le BLE se met alors en marche . 
 Un boutton "PLAY" apparait alors et en appuyant sur celui -ci , l'appareil scan les périphériques bluetooth se trouvant à proximité . Sur l'écran est alors affiché le nom des appareils se trouvant dans les alentours et leurs adresses correspondantes.
 Pour notre projet , on se connecte alors à la carte STM32 avec le BLE du nom SAVEE
