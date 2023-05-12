@@ -34,11 +34,13 @@ https://www.canva.com/design/DAFhGJYLjHA/FmaJW0r7sD-M4_MSMO0pXw/view?utm_content
 # Application mobile
 Présentation de l'application mobile et ses différentes parties 
 
-=> Page de connexion *
+=> Page de connexion 
 
 identifiant existant pour se connecter : 
--Identifiant :smartenergy@isen.fr
--Mot de passe :12345678
+
+Identifiant :smartenergy@isen.fr
+
+Mot de passe :12345678
 
 => Page de création de compte 
 
@@ -75,13 +77,13 @@ En entrant dans la page BLE , on a un boutton "Se connecter au bluetooth" . En c
 Un boutton "PLAY" apparait alors et en appuyant sur celui -ci , l'appareil scan les périphériques bluetooth se trouvant à proximité . Sur l'écran est alors affiché le nom des appareils se trouvant dans les alentours et leurs adresses correspondantes.
 Pour notre projet , on se connecte alors à la carte STM32 avec le BLE du nom SAVEE
 Ensuite on accède à plusieurs informations à savoir : 
--l'accès générique
--l'attribut générique
--le service spécifique
--le nom du périphérique
--l'apparance
-- les custom characteristic 1, 2, 3, 4 qui est ce qui nous interesse ici 
+l'accès générique
+l'attribut générique
+le service spécifique
+le nom du périphérique
+l'apparance
+les custom characteristic 1, 2, 3, 4 qui est ce qui nous interesse ici 
 Ici , on va pouvoir: 
--écrire en mode "write" dans la 1ère caractéristique
--ensuite lire en mode "read" la valeur précedemment écrite dans la 2e caractéristique 
--Puis le "notify" qui va demarrer un timer dans la 3e caractéristique
+écrire en mode "write" dans la 1ère caractéristique
+ensuite lire en mode "read" la valeur précedemment écrite dans la 2e caractéristique 
+Puis le "notify" qui va demarrer un timer dans la 3e caractéristique
