@@ -37,7 +37,9 @@ Présentation de l'application mobile et ses différentes parties :
 
 - Page de connexion 
 identifiant existant pour se connecter : 
+
     Identifiant :smartenergy@isen.fr
+    
     Mot de passe :12345678
 
 - Page de création de compte 
